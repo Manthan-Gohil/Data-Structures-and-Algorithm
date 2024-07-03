@@ -24,4 +24,16 @@ int main(){
 
     int result2 = Manthan::letsparty(5,4);
     cout<<result2<<endl;
+
+    int num;
+    cout<<"enter the number"<<endl;
+    cin>>num;
+    if(cin.fail())
+    {
+        cout<<"Failed"<<endl;
+    }
+    else
+    {
+        cout<<"Success"<<endl;
+    }
 }
