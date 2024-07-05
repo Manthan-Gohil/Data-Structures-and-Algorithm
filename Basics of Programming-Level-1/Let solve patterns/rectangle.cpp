@@ -3,9 +3,18 @@ using namespace std;
 
 int main(){
 
-    for(int r=0;r<3;r++){
+    int length,width;
+    cout<<"Enter length"<<endl;
+    cin>>length;
 
-        for(int c=0;c<5;c++){
+    cout<<"Enter width"<<endl;
+    cin>>width;
+
+    //outer
+    for(int r=0;r<length;r++){
+        //inner
+        for(int c=0;c<width;c++){
+            //hr 1 column me 1* print karna hai
             cout<<"* ";
         }
         cout<<endl;

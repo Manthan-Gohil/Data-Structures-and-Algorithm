@@ -2,21 +2,20 @@
 using namespace std;
 
 int main(){
-
-    //total rows = 4
-    // every row -> 4 star
+    int side;
+    cout<<"Enter side of square"<<endl;
+    cin>>side;
 
     //row-> outerloop
     //column->innerloop
 
-    //outerloop->4row
-    for(int row=0;row<4;row++){
-        //innerloop->4 star print
+    //outerloop
+    for(int row=0;row<side;row++){
+        //innerloop
         //hr row me kya krna hai, vo inner loop batayega
-        for(int col=0;col<4;col++){
+        for(int col=0;col<side;col++){
             cout<<"* ";
         }
-        //4 star print karne ke baad, next line me aata hu
         cout<<endl;
     }
 }
