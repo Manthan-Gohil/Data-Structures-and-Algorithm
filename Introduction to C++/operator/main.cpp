@@ -52,19 +52,19 @@ int main()
         cout<<"All conditions are not true"<<endl;
     }
 
-    // bool cond1 = (10>5);
-    // bool cond2 = (5>=5);
-    // bool cond3 = (2!=2);
+    bool cond1 = (10>5);
+    bool cond2 = (5>=5);
+    bool cond3 = (2!=2);
 
-    // if(cond1 || cond2 || cond3){
-    //     cout<<"At least one condition is true"<<endl;
-    // }
-    // else{
-    //     cout<<"All conditions are false"<<endl;
-    // }
+    if(cond1 || cond2 || cond3){
+        cout<<"At least one condition is true"<<endl;
+    }
+    else{
+        cout<<"All conditions are false"<<endl;
+    }
     
-    // bool condition = (5!=10);
-    // cout<<condition<<endl;
+    bool condition = (5!=10);
+    cout<<condition<<endl;
     
     bool condition = false;
     cout<<!condition<<endl;
