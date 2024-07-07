@@ -152,6 +152,61 @@ void mixpyramid(int n){
         cout<<endl;
     }
 }
+
+void fancy12(int n){
+
+    for(int i=0;i<n;i++){
+
+        for(int j=0;j<2*i+1;j++){
+            if(j%2==0){
+                cout<<i+1;
+            }
+            else{
+                cout<<"*";
+            }
+        }
+        cout<<endl;
+    }
+}
+
+void fullfancy12(int n){
+    //part 1.
+    fancy12(n);
+    
+    n--;
+    // inverted ka logic
+    for(int i=0;i<n;i++){
+
+        for(int j=0;j<2*n-2*i-1;j++){
+            if(j%2==0){
+                cout<<n-i;
+            }
+            else{
+                cout<<"*";
+            }
+        }
+        cout<<endl;
+    }
+}
+
+void ABCBA(int n){
+
+    for(int i=0;i<n;i++){
+        char ch = 'A'; //ASCII 65 init.
+        for(int j=0;j<i+1;j++){
+            cout<<ch;
+            ch++;
+        }
+
+        ch--;
+        while(ch>'A'){
+            ch--;
+            cout<<ch;
+        }
+        cout<<endl;
+    }
+    
+}
 int main()
 {
     // fullpyramid(10);
@@ -160,5 +215,8 @@ int main()
     // hollowpyramid(10);
     // invertedhollowpyramid(10);
     // hollowdiamond(10);
-    mixpyramid(10);
+    // mixpyramid(10);
+    // fancy12(5);
+    // fullfancy12(5);
+    // ABCBA(5);
 }
