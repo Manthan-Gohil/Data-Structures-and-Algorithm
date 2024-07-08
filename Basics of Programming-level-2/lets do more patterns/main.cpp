@@ -219,4 +219,5 @@ int main()
     // fancy12(5);
     // fullfancy12(5);
     // ABCBA(5);
+   
 }
