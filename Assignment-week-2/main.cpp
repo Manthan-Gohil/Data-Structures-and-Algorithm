@@ -90,10 +90,35 @@ void solid_half_diamond(int n){
         cout<<endl;
     }
 }
+
+void fancy_pattern_1(int n){
+
+    for(int i=0;i<n;i++){
+        //PART 1.
+        for(int j=0;j<2*n-i;j++){
+            cout<<"*";
+        }
+        //PART 2.
+        for(int j=0;j<2*i+1;j++){
+            if(j%2==0){
+                cout<<i+1;
+            }
+            else{
+                cout<<"*";
+            }
+        }
+        //PART 3.
+        for(int j=0;j<2*n-i;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
 int main()
 {
     // numeric_hollow_half_pyramid(5);
     // numeric_hollow_inverted_half_pyramid(10);
     // numeric_palindrome_equilateral_pyramid(10);
-    solid_half_diamond(10);
+    // solid_half_diamond(10);
+    fancy_pattern_1(7);
 }
