@@ -114,11 +114,46 @@ void fancy_pattern_1(int n){
         cout<<endl;
     }
 }
+void fancy_pattern_2(int n){
+
+    int c = 1;
+    for(int i=0;i<n;i++){
+
+        for(int j=0;j<2*i+1;j++){
+
+            if(j%2==0){
+                cout<<c;
+                c++;
+            }
+            else{
+                cout<<"*";
+            }
+        }
+        cout<<endl;
+    }
+    int start = c-n;
+    for(int i=0;i<n;i++){
+        int k = start;
+        for(int j=0;j<2*n-2*i-1;j++){
+            if(j%2==0){
+                cout<<k;
+                k++;
+            }
+            else{
+                cout<<"*";
+            }
+           
+        }
+        start = start - (n-i-1);
+        cout<<endl;
+        }
+}
 int main()
 {
     // numeric_hollow_half_pyramid(5);
     // numeric_hollow_inverted_half_pyramid(10);
     // numeric_palindrome_equilateral_pyramid(10);
     // solid_half_diamond(10);
-    fancy_pattern_1(7);
+    // fancy_pattern_1(7);
+    fancy_pattern_2(4);
 }
