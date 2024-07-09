@@ -68,12 +68,32 @@ void numeric_palindrome_equilateral_pyramid(int n){
         k++;
         cout<<endl;
     }
+}
 
+void solid_half_diamond(int n){
 
+    //PART 1.
+    for(int i=0;i<n;i++){
+
+        for(int j=0;j<i+1;j++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+    //PART 2.
+    n--;
+    for(int i=0;i<n;i++){
+
+        for(int j=0;j<n-i;j++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
 }
 int main()
 {
     // numeric_hollow_half_pyramid(5);
     // numeric_hollow_inverted_half_pyramid(10);
-    numeric_palindrome_equilateral_pyramid(10);
+    // numeric_palindrome_equilateral_pyramid(10);
+    solid_half_diamond(10);
 }
