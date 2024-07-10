@@ -199,6 +199,18 @@ void fancy_pattern_3(int n){
     }
     cout<<"*"<<endl;
 }
+
+void floyd_triangle_pattern(int n){
+
+    int c = 1;
+    for(int i=0;i<n;i++){
+        for(int j=0;j<i+1;j++){
+            cout<<c<<" ";
+            c++;
+        }
+        cout<<endl;
+    }
+}
 int main()
 {
     // numeric_hollow_half_pyramid(5);
@@ -207,5 +219,6 @@ int main()
     // solid_half_diamond(10);
     // fancy_pattern_1(7);
     // fancy_pattern_2(4);
-    fancy_pattern_3(7);
+    // fancy_pattern_3(7);
+    floyd_triangle_pattern(7);
 }
