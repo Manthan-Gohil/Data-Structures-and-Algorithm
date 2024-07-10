@@ -211,6 +211,16 @@ void floyd_triangle_pattern(int n){
         cout<<endl;
     }
 }
+void pascal_triangle_pattern(int n){
+    for(int i=1;i<=n;i++){
+        int c = 1;
+        for(int j=1;j<=i;j++){
+            cout<<c<<" ";
+            c = c*(i-j)/j;
+        }
+        cout<<endl;
+    }
+}
 int main()
 {
     // numeric_hollow_half_pyramid(5);
@@ -220,5 +230,6 @@ int main()
     // fancy_pattern_1(7);
     // fancy_pattern_2(4);
     // fancy_pattern_3(7);
-    floyd_triangle_pattern(7);
+    // floyd_triangle_pattern(7);
+    pascal_triangle_pattern(7);
 }
