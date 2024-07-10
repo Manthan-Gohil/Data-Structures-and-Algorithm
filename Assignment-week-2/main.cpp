@@ -92,7 +92,13 @@ void solid_half_diamond(int n){
 }
 
 void fancy_pattern_1(int n){
-
+/*
+********1********
+*******2*2*******
+******3*3*3******
+*****4*4*4*4*****
+****5*5*5*5*5****
+*/
     for(int i=0;i<n;i++){
         //PART 1.
         for(int j=0;j<2*n-i;j++){
@@ -115,7 +121,16 @@ void fancy_pattern_1(int n){
     }
 }
 void fancy_pattern_2(int n){
-
+/*
+1
+2*3
+4*5*6
+7*8*9*10
+7*8*9*10
+4*5*6
+2*3
+1
+*/
     int c = 1;
     for(int i=0;i<n;i++){
 
@@ -148,6 +163,42 @@ void fancy_pattern_2(int n){
         cout<<endl;
         }
 }
+
+void fancy_pattern_3(int n){
+/*
+*
+* 1 *
+* 1 2 1 *
+* 1 2 3 2 1 *
+* 1 2 1 *
+* 1 *
+*
+*/
+
+    cout<<"*"<<endl;
+    for(int i=0;i<n;i++){
+
+        int cond = i<=n/2 ? 2*i : 2*(n-i-1);
+        //2*i is row wise growing phase condition
+        //2*(n-i-1) is row wise shrinking phase condition
+        for(int j=0;j<=cond;j++){
+            if(j==0){
+                cout<<"*";
+            }
+            if(j<=cond/2){
+                cout<<j+1; //column wise growing phase condition
+            }
+            else{
+                cout<<cond-j+1; //column wise shrinking phase condition
+            }
+            if(j==2*i || j==2*(n-i-1)){
+                cout<<"*";
+            }
+        }
+        cout<<endl;
+    }
+    cout<<"*"<<endl;
+}
 int main()
 {
     // numeric_hollow_half_pyramid(5);
@@ -155,5 +206,6 @@ int main()
     // numeric_palindrome_equilateral_pyramid(10);
     // solid_half_diamond(10);
     // fancy_pattern_1(7);
-    fancy_pattern_2(4);
+    // fancy_pattern_2(4);
+    fancy_pattern_3(7);
 }
