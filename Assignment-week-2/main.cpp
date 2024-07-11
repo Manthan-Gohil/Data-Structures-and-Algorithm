@@ -221,6 +221,7 @@ void pascal_triangle_pattern(int n){
         cout<<endl;
     }
 }
+
 int main()
 {
     // numeric_hollow_half_pyramid(5);
