@@ -57,7 +57,7 @@ void countnumber(int arr[],int n){
 }
 
 void extremeprinting(int arr[],int n){
-
+    // Two Pointer Technique
     int i = 0;
     int j = n-1;
     while(i<=j){
@@ -73,6 +73,36 @@ void extremeprinting(int arr[],int n){
         }
         
     }
+}
+
+void swappingnumber(){
+
+    int a,b;
+    int temp;
+    cout<<"Enter a = ";
+    cin>>a;
+    cout<<"Enter b = ";
+    cin>>b;
+    //Method 1.
+    // temp = a;
+    // a = b;
+    // b = temp;
+    // cout<<"a = "<<a<<endl;
+    // cout<<"b = "<<b<<endl;
+
+    //Method 2.
+    // swap(a,b);
+    // cout<<"a = "<<a<<endl;
+    // cout<<"b = "<<b<<endl;
+}
+
+void reverse_array(int arr[],int n){
+    int i = n-1;
+    while(i>=0){
+        cout<<arr[i]<<" ";
+        i--;
+    }
+
 }
 
 int main()
@@ -126,6 +156,10 @@ int main()
     // cout<<"Maximum number is: "<<maxnumber2(arr,size);
     // countnumber(arr,size);
 
-    extremeprinting(arr,size);
+    // extremeprinting(arr,size);
+
+    // swappingnumber();
+
+    reverse_array(arr,size);
 
 }
