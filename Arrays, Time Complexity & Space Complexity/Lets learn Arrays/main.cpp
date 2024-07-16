@@ -94,6 +94,14 @@ void swappingnumber(){
     // swap(a,b);
     // cout<<"a = "<<a<<endl;
     // cout<<"b = "<<b<<endl;
+
+    //Method 3.
+    // a = a+b;
+    // b = a-b;
+    // a = a-b;
+    // cout<<"a = "<<a<<endl;
+    // cout<<"b = "<<b<<endl;
+
 }
 
 void reverse_array(int arr[],int n){
