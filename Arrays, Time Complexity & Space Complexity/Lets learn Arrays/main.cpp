@@ -56,6 +56,25 @@ void countnumber(int arr[],int n){
     cout<<"Total 0's: "<<count1<<" "<<"Total 1's: "<<count2<<endl;
 }
 
+void extremeprinting(int arr[],int n){
+
+    int i = 0;
+    int j = n-1;
+    while(i<=j){
+        if(i==j){
+            cout<<arr[i]<<" ";
+            break;
+        }
+        else{
+        cout<<arr[i]<<" ";
+        i++;
+        cout<<arr[j]<<" ";
+        j--;
+        }
+        
+    }
+}
+
 int main()
 {
     //creation
@@ -105,6 +124,8 @@ int main()
 
     // cout<<"Maximum number is: "<<maxnumber(arr,size);
     // cout<<"Maximum number is: "<<maxnumber2(arr,size);
-    countnumber(arr,size);
+    // countnumber(arr,size);
+
+    extremeprinting(arr,size);
 
 }
