@@ -31,6 +31,58 @@ void sortZeroOne(int arr[],int n){
         arr[i]=1;
     }
 }
+
+void pairs(int arr[],int n){
+    //pair 1.
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cout<<arr[i]<<" "<<arr[j]<<endl;
+        }
+    }
+    cout<<"end"<<endl;
+    //pair 2.
+    for(int i=0;i<n;i++){
+        for(int j=i;j<n;j++){
+            cout<<arr[i]<<" "<<arr[j]<<endl;
+        }
+    }
+    cout<<"end"<<endl;
+    //pair 3.
+    for(int i=0;i<n;i++){
+        for(int j=0;j<i;j++){
+            cout<<arr[i]<<" "<<arr[j]<<endl;
+        }
+    }
+    cout<<"end"<<endl;
+    //pair 4.
+    for(int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            cout<<arr[i]<<" "<<arr[j]<<endl;
+        }
+    }
+    cout<<"end"<<endl;
+    //pair 5.
+    for(int i=0;i<n;i++){
+        for(int j=n-1;j>=0;j--){
+            cout<<arr[i]<<" "<<arr[j]<<endl;
+        }
+    }
+    cout<<"end"<<endl;
+    //pair 6.
+    for(int i=0;i<n;i++){
+        for(int j=n-1;j>i;j--){
+            cout<<arr[i]<<" "<<arr[j]<<endl;
+        }
+    }
+    cout<<"end"<<endl;
+    //pair 7.
+    for(int i=0;i<n;i++){
+        for(int j=i+1;j<n;j++){
+            cout<<arr[i]<<" "<<arr[j]<<endl;
+        }
+    }
+}
+
 int main(){
 
     int arr[100];
@@ -45,11 +97,13 @@ int main(){
 
     // cout<<"Unique number from array is: "<<findUniqueNumber(arr,size);
 
-    sortZeroOne(arr,size);
-    //printing
-    for(int i=0;i<size;i++){
-        cout<<arr[i]<<" ";
-    }
+    // sortZeroOne(arr,size);
+    // //printing
+    // for(int i=0;i<size;i++){
+    //     cout<<arr[i]<<" ";
+    // }
+
+    // pairs(arr,size);
 
     return 0;
 }
