@@ -25,9 +25,24 @@ int missing_number(vector<int> nums){
     return sortingmethod(nums);
 }
 
-
+// Method 2.
+int xorr(vector<int> nums){
+    int n = nums.size();
+    int ans = 0;
+    //1. xor all values of array
+    for(int i=0;i<n;i++){
+        ans = ans^nums[i];
+    }
+    //2. xor all range items [0,n]
+    for(int i=0;i<=n;i++){
+        ans = ans^i;
+    }
+    return ans;
+}
 int main(){
-    vector<int> nums {0,1,4,2};
-
-    cout<< "Missing number = "<<missing_number(nums);
+    vector<int> nums {0,1,4,2,3};
+    //Method 1.
+    cout<< "Missing number = "<<missing_number(nums)<<endl;
+    //Method 2.
+    cout<< "Missing number = "<<xorr(nums);
 }
